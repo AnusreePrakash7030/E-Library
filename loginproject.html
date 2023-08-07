@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login page</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        margin-top: 0px;
+        background: #f6f9fc;
+      }
+      .account-block {
+        padding: 0;
+        background-image: url(/static/images/library-scaled.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        position: relative;
+      }
+      .account-block .overlay {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .account-block .account-testimonial {
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        padding: 60px;
+        padding-left: 115px;
+
+      }
+
+      .text-theme {
+        color: #5369f8 !important;
+      }
+
+      .btn-theme {
+        background-color: #5369f8;
+        border-color: #5369f8;
+        color: #fff;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+        overflow: hidden;
+      }
+
+      nav li {
+        float: right;
+      }
+
+      nav li a {
+        display: block;
+        color: #333;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      nav li a:hover {
+        background-color: #ddd;
+        color: #333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--navbar-->
+    <nav>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
+    <!-- tr modal begins-->
+
+    <!-- jumbotron begins-->
+
+    <!-- jumbotron ends-->
+
+    <br />
+    <br />
+    <br />
+    <div id="main-wrapper" class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-10">
+          <div class="card border-0">
+            <div class="card-body p-0">
+              <div class="row no-gutters">
+                <div class="col-lg-6">
+                  <div class="p-5">
+                    <div class="mb-5">
+                      <h3 class="h4 font-weight-bold text-theme">Login</h3>
+                    </div>
+
+                    <p class="text-muted mt-2 mb-5">
+                      Enter your ID and password to continue.
+                    </p>
+
+                    <form action="/loginproject" method="POST">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="username"
+                          name="username"
+                          placeholder="Enter your Id"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password"
+                          name="password"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <button type="submit" class="btn btn-theme">Login</button>
+                      <a href="#l" class="forgot-link float-right text-primary"
+                        >Forgot password?</a
+                      >
+                    </form>
+                  </div>
+                </div>
+                
+                           <div class="col-lg-5 d-none d-lg-inline-block">
+                               <div class="account-block rounded-right">
+                                   <div class="overlay rounded-right"></div>
+                                   <div class="account-testimonial">
+                                       <h2 class="text-white mb-4">E-Materials</h2>
+                                       <p class="lead text-white">Add Materials</p>
+                                       
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+              
+            <!-- end card-body -->
+          </div>
+          <!-- end card -->
+
+          <!-- end row -->
+        </div>
+        <!-- end col -->
+      </div>
+      <!-- Row -->
+      <br />
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
